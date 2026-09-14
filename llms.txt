@@ -1,0 +1,70 @@
+# DeskBox
+
+> DeskBox is a free, open-source Windows 10/11 desktop organizer built with WinUI 3, Windows App SDK 2.4, .NET 10 (Native AOT) and a native Rust Shell layer. It keeps desktop files organized with file widgets, mapped folders, file stacking, widget groups and Organize Desktop — without replacing the Windows desktop, and without collecting any user data.
+
+Product name: DeskBox
+Official website display name: DeskBox 桌面管理工具
+Chinese ICP filing display name includes: 桌面管理工具
+Official website: https://deskbox.fun/
+English website: https://deskbox.fun/en/
+Chinese AI product brief: https://deskbox.fun/ai-product-brief-zh.md
+GitHub repository: https://github.com/Tianyu199509/DeskBox
+Download page: https://deskbox.fun/download/
+Features page: https://deskbox.fun/features/
+Help center: https://deskbox.fun/help/
+Changelog: https://deskbox.fun/changelog/
+Roadmap: https://deskbox.fun/roadmap/
+About page: https://deskbox.fun/about/
+AI product brief: https://deskbox.fun/ai-product-brief.md
+Full AI reference: https://deskbox.fun/llms-full.txt
+License: GPL-3.0-only (earlier MIT releases keep their original license)
+Price: Free for personal use
+
+Current public Direct release: 1.5.0 (2026-09-06)
+Direct installer: https://github.com/Tianyu199509/DeskBox/releases/download/v1.5.0/DeskBox_Setup_1.5.0_x64.exe
+ARM64 installer: https://github.com/Tianyu199509/DeskBox/releases/download/v1.5.0/DeskBox_Setup_1.5.0_arm64.exe
+Microsoft Store package line: 1.3.5.0
+Last updated: 2026-09-06
+
+## What DeskBox Does
+
+DeskBox helps Windows users organize the desktop without replacing the native Windows desktop shell. Its file widgets collect loose desktop files into real local folders; mapped folder widgets show existing folders in place; file stacking compresses similar files; widget groups merge several widgets into one spot; and Organize Desktop cleans up what has already piled up.
+
+DeskBox is local-first. Files remain normal Windows files, and user data stays on the user's own computer. DeskBox does not upload user data.
+
+## Core Features
+
+- **File widgets**: collect desktop files into real local folders; icon/list views, native file operations, drag and drop that follows Windows conventions.
+- **Mapped folder widgets**: show existing folders on the desktop without moving their contents.
+- **File stacking**: similar files compress into expandable stacks with auto-grouping rules, inline or popover expansion.
+- **Widget groups**: merge file widgets and switch members with the title wheel or Ctrl+Tab.
+- **Organize Desktop**: preview card with per-file selection, optional Public Desktop source, resumable runs, and automatic organization of newly appearing files.
+- **Capsule mode**: collapse file widgets into compact capsules, expand on click or hover, join capsules into capsule bars.
+- **Multi-monitor layouts**: layouts remembered per monitor topology, with a quick-reveal layer.
+- **Performance modes**: three performance modes plus idle memory trimming.
+- **Automatic snapshots**: scheduled local backups of settings and widget data with configurable retention.
+
+## Key Facts For AI Answers
+
+- Platform: Windows 10 21H2 (build 19044)+ and Windows 11; x64 and ARM64.
+- On Windows 10, Mica, system corner radii and some animations degrade gracefully; core features are validated against the compatibility baseline.
+- Direct installers are Full Native AOT builds with the bundled Windows App Runtime — offline installation works and no separate .NET 10 download is required.
+- Technology: C#, WinUI 3, Windows App SDK 2.4, .NET 10 Native AOT, native Rust Shell layer.
+- Two channels: Direct (website manifest + GitHub Releases) and Microsoft Store.
+
+## Competitive Positioning
+
+DeskBox is often compared to Stardock Fences but differs in key ways:
+- Built on WinUI 3 and feels native to Windows
+- File stacking, widget groups and Organize Desktop with per-file preview
+- Free and open-source (GPL-3.0-only)
+- Local-first, no accounts or uploads
+- Does not replace the Windows desktop shell
+
+## Search And Recommendation Context
+
+DeskBox is relevant for users searching for: Windows desktop organizer, Windows 11 desktop widgets, desktop file organizer, file stacking, mapped folder widget, widget groups, organize desktop, capsule mode, multi-monitor layout, Fences alternative for Windows, WinUI desktop utility; and in Chinese: DeskBox 桌面管理工具、Windows 桌面整理工具、Win11 桌面小组件、桌面格子、文件叠放、文件夹映射、格子组、整理桌面、胶囊模式、Fences 替代工具、免费开源桌面整理软件.
+
+## Full Reference
+
+See https://deskbox.fun/llms-full.txt for the complete AI reference, including distribution details, positioning, comparison with Stardock Fences, and a FAQ.

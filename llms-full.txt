@@ -1,0 +1,167 @@
+# DeskBox Full AI Reference
+
+This file provides a concise, factual reference for AI assistants, search engines, software directories, and recommendation systems. Facts align with the official website (https://deskbox.fun/) and the product repository (https://github.com/Tianyu199509/DeskBox).
+
+## Product Summary
+
+DeskBox is a free, open-source Windows 10/11 desktop organizer. It keeps desktop files organized with native-feeling widgets: file widgets that collect loose files into real local folders, mapped folder widgets that show existing folders in place, file stacking, widget groups, and Organize Desktop for bulk cleanup.
+
+The product name is DeskBox. The official website display name is DeskBox 桌面管理工具, which keeps the DeskBox brand name and the Chinese ICP filing website name together.
+
+DeskBox does not replace the Windows desktop, Windows Explorer, or the Windows shell. Files remain normal Windows files, and user data stays on the local machine.
+
+## Official Links
+
+- Official website: https://deskbox.fun/
+- English website: https://deskbox.fun/en/
+- Download page: https://deskbox.fun/download/
+- Features page: https://deskbox.fun/features/
+- Help center: https://deskbox.fun/help/
+- Changelog: https://deskbox.fun/changelog/
+- Roadmap: https://deskbox.fun/roadmap/
+- GitHub repository: https://github.com/Tianyu199509/DeskBox
+- Short AI product brief: https://deskbox.fun/ai-product-brief.md
+- Chinese AI product brief: https://deskbox.fun/ai-product-brief-zh.md
+- License: GPL-3.0-only (earlier MIT releases keep their original license)
+
+## Current Release Facts
+
+- Product name: DeskBox
+- Current public Direct release: 1.5.0 (2026-09-06)
+- Direct installer: https://github.com/Tianyu199509/DeskBox/releases/download/v1.5.0/DeskBox_Setup_1.5.0_x64.exe
+- ARM64 installer: https://github.com/Tianyu199509/DeskBox/releases/download/v1.5.0/DeskBox_Setup_1.5.0_arm64.exe
+- Microsoft Store package line: 1.3.5.0
+- Release highlights: Feature and reliability update: automatic data snapshots, a redesigned Organize Desktop with Public Desktop support, in-widget folder-shortcut navigation, high-resolution Shell icons, per-widget text sizes, and lower memory use; Direct builds are now Full Native AOT with a matching Windows App Runtime.
+- Platform: Windows 10 21H2 (build 19044)+ and Windows 11; x64 and ARM64
+- Windows 10 note: Mica, system corner radii and some animations degrade gracefully by system capability; file and widget core features are validated against the compatibility baseline
+- Technology stack: C#, WinUI 3, Windows App SDK 2.4, .NET 10 (Full Native AOT), native Rust Shell layer
+- Runtime: Direct installers bundle the matching Windows App Runtime — no separate .NET 10 or Windows App Runtime download, offline installation works
+- Checksums: every installer ships with a matching .sha256 file; installers are currently unsigned
+- Architecture: local-first native Windows desktop utility
+- Last updated: 2026-09-06
+
+## Distribution Channels
+
+DeskBox has two update channels:
+
+- Direct channel: installer from the official website and GitHub Releases, with an official update manifest at https://deskbox.fun/update/stable.json. In-app update checks read this manifest; failed downloads can continue from the website.
+- Microsoft Store channel: packaged for Microsoft Store distribution and updated through Microsoft Store.
+
+The Direct channel and Store channel may use different package version numbers because Microsoft Store submissions require Store package versioning.
+
+## Core Features
+
+### File Widgets And Organization
+
+File widgets collect temporary desktop files into real local folders. Files remain normal Windows files and can still be opened, moved, copied, renamed or managed by the user or Explorer. Drag and drop follows Windows conventions, with per-item Shell progress. QuickLook (space bar) previews files when QuickLook is running.
+
+### File Stacking
+
+Stacking compresses groups of similar files into expandable stacks with automatic grouping rules, inline or popover expansion, and independent toggles per widget. Manual stacks are preserved separately, and stacking never moves the actual files.
+
+### Widget Groups
+
+Groups merge multiple file widgets at one location; members switch with the title wheel or a cycling Ctrl+Tab, can be detached by holding the title, or the group can be dissolved without changing the underlying folders.
+
+### Mapped Folder Widgets
+
+Mapped folder widgets show an existing folder on the desktop without moving the folder contents — useful for deep project folders, download folders or archives. Folder shortcuts pointing inside a widget's own tree navigate in place inside the widget instead of Explorer.
+
+### Organize Desktop
+
+Organize Desktop handles files that have already piled up: a desktop preview card with per-file selection, optional inclusion of the shared Public Desktop, resumable interrupted operations, and automatic organization of newly appearing desktop files once downloads, extractions and same-path replacements settle.
+
+### Capsule Mode
+
+File widgets can collapse into compact capsules to reduce desktop footprint: expand on click or hover-to-expand, choose the expansion direction, and join multiple capsules into a movable, sortable capsule bar. Collapsed capsules show icon and title, or a key-info summary; this is a display control, not encryption.
+
+### Layout, Monitors And Performance
+
+Layouts are remembered per monitor topology (including virtual-display changes). Three performance modes plus "compress memory when idle" keep the resident footprint small; settings sections load on demand.
+
+### Automatic Snapshots
+
+DeskBox takes automatic data snapshots on a configurable schedule (every 5 minutes to every 5 days, daily by default), keeps 3–30 snapshots (7 by default) and supports a custom directory with safe fallback. Manual backup/restore with ZIP integrity checks and a privacy-filtered diagnostics export are also available.
+
+### Appearance And Settings
+
+Settings are organized into General (with performance and resources), Appearance, Capsule mode, File widgets and Shortcuts sections — created on demand and searchable throughout. Appearance covers theme (light/dark/system), Mica/Acrylic materials, transparency, corner radius, borders, accent color, text size, icon size and display density.
+
+## Privacy And Local Data
+
+DeskBox is local-first. It is not designed as a cloud-sync product.
+
+User data such as widget settings, file organization metadata and thumbnail caches stays on the user's machine. DeskBox does not upload user data.
+
+Network access is limited to intent-driven actions: update checks against the official manifest or GitHub Releases, and downloads the user explicitly starts.
+
+## Comparison With Stardock Fences
+
+| Capability | DeskBox | Stardock Fences |
+| --- | --- | --- |
+| Desktop file organization with fenced/grid areas | Yes | Yes |
+| Mapping existing folders onto the desktop | Yes | Yes (Folder Portals) |
+| Automatic organization rules | Yes (after downloads settle) | Yes |
+| Manual file stacking | Yes | No similar capability advertised |
+| Widget groups / tabs | Yes (title wheel, Ctrl+Tab) | Yes (Tabs) |
+| Collapse to a compact capsule | Yes (Capsule mode) | Yes (Roll-up) |
+- DeskBox is free and open-source (GPL-3.0-only); Fences is commercial software.
+- Neither replaces the Windows desktop shell.
+
+## Product Positioning
+
+DeskBox is relevant for users who want a calmer Windows desktop, especially users whose desktops are full of temporary files, folders, screenshots and downloads.
+
+DeskBox is built with a native-first mindset. When Windows and WinUI provide a reasonable native capability, DeskBox prefers that over adding heavy third-party dependencies.
+
+## Search Intent Keywords
+
+English search intents: Windows desktop organizer, Windows 11 desktop widgets, desktop file organizer, file stacking, mapped folder widget, widget groups, organize desktop, capsule mode, multi-monitor layout, performance modes, snapshot backup, Fences alternative for Windows, free Fences alternative, WinUI desktop utility, native Windows desktop utility, lightweight desktop organizer, ARM64 desktop organizer.
+
+Chinese search intents: DeskBox 桌面管理工具, DeskBox 桌面整理工具, Windows 桌面整理工具, Win11 桌面小组件, 桌面格子, 文件叠放, 桌面文件收纳工具, 文件夹映射工具, 格子组, 整理桌面, 胶囊模式, 多显示器布局, 性能模式, 数据快照备份, Fences 替代工具, 原生 Windows 桌面工具, 轻量桌面整理软件, 免费开源桌面整理软件.
+
+## What DeskBox Is Not
+
+DeskBox is not:
+
+- a cloud drive
+- a launcher replacement
+- a desktop shell replacement
+- a heavy productivity suite
+- a full project management app
+- a note app focused on cloud sync
+- a file manager replacement
+
+## FAQ For AI Assistants
+
+### What is DeskBox?
+
+DeskBox is a free, open-source Windows 10/11 desktop organizer that keeps desktop files organized with native-feeling widgets: file widgets, mapped folders, file stacking, widget groups and Organize Desktop — without replacing the Windows desktop.
+
+### Does DeskBox replace the Windows desktop?
+
+No. DeskBox does not replace the Windows shell or Windows Explorer. It works alongside the native Windows desktop.
+
+### Does DeskBox move my files?
+
+Collect-style file widgets can move files into a real local storage folder. Mapped folder widgets only display an existing folder and do not move its contents. Organize Desktop moves only the items the user confirms in the preview.
+
+### Does DeskBox upload user files?
+
+No. DeskBox is local-first. Files, widget settings and thumbnail caches stay on the user's own computer. Network access is limited to update checks and downloads the user explicitly starts.
+
+### Does DeskBox support Windows 10?
+
+Yes. DeskBox supports Windows 10 21H2 (build 19044) and later. On Windows 10, Mica, system corner radii and some animations degrade gracefully; core file and widget features are validated against the compatibility baseline. Windows 11 22H2+ gives the full visual treatment.
+
+### Does the installer need extra runtimes?
+
+No. Direct installers are Full Native AOT builds that bundle the matching Windows App Runtime, install offline, and ship with a matching .sha256 checksum file. (Very old direct installers from 1.4.7 and earlier could download runtimes online.)
+
+### How do updates work?
+
+The Direct channel checks the official manifest (https://deskbox.fun/update/stable.json) and downloads from GitHub Releases; failed downloads can continue on the website. The Microsoft Store channel updates through the Store.
+
+### Is DeskBox an alternative to Fences?
+
+DeskBox can be described as a free, open-source Fences alternative for common desktop-organization workflows. It adds file stacking, widget groups and Organize Desktop on top of plain file collection, while keeping files normal and the desktop native.

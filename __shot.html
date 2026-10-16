@@ -1,0 +1,12 @@
+<!doctype html><meta charset="utf-8"><body style="margin:0;overflow:hidden">
+<iframe id="f" style="border:0;display:block"></iframe>
+<script>
+const p = new URLSearchParams(location.search);
+if (p.get('theme')) localStorage.setItem('deskbox_theme', p.get('theme'));
+if (p.get('locale')) localStorage.setItem('deskbox_locale', p.get('locale'));
+const f = document.getElementById('f');
+f.style.width = (p.get('iw') || 390) + 'px';
+f.style.height = (p.get('ih') || 844) + 'px';
+const path = p.get('path') || '/';
+f.src = path + (path.includes('?') ? '&' : '?') + 'v=' + Date.now();
+</script>

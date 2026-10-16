@@ -1,0 +1,6 @@
+<!doctype html><meta charset="utf-8"><script>
+var p = new URLSearchParams(location.search);
+if (p.get('theme')) localStorage.setItem('deskbox_theme', p.get('theme'));
+if (p.get('locale')) localStorage.setItem('deskbox_locale', p.get('locale'));
+location.replace((p.get('path') || '/') + '?v=' + Date.now());
+</script>

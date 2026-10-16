@@ -1,0 +1,19 @@
+{
+    "schemaVersion": 1,
+    "channel": "stable",
+    "version": "1.5.7",
+    "releaseDate": "2026-10-13",
+    "minimumSupportedVersion": "1.0.0",
+    "mandatory": false,
+    "downloadUrl": "https://github.com/Tianyu199509/DeskBox/releases/download/v1.5.7/DeskBox_Setup_1.5.7_x64.exe",
+    "arm64DownloadUrl": "https://github.com/Tianyu199509/DeskBox/releases/download/v1.5.7/DeskBox_Setup_1.5.7_arm64.exe",
+    "manualDownloadUrl": "https://pan.quark.cn/s/f7a6769cdaf3",
+    "mirrorUrl": "https://pan.quark.cn/s/f7a6769cdaf3",
+    "sha256": "3ED47D75177329438AC080337325681F73F8A2F8930A523EB741C3C33B653BE1",
+    "size": 33023642,
+    "releaseNotesUrl": "https://github.com/Tianyu199509/DeskBox/releases/tag/v1.5.7",
+    "summary": {
+        "zh-CN": "**退出可靠性。** 从托盘退出后进程必定结束。在系统\"应用退出\"握手机制失灵的机器上（典型为 UAC 完全关闭且资源管理器以管理员运行的 Windows），退出后曾残留一个后台进程：托盘消失、再次启动也正常，但残留进程慢慢吃内存，还带着右键菜单代理一起驻留（反馈 555/556）。现在所有退出路径都带延迟强制结束保底，提权提示窗与搜索弹窗也随退出关闭；直装版与商店版同享修复。；**Windows 10：拖出卡片保住标题。** 「设置 → 文件格子 → 文件拖放行为 → 拖出格子时」卡片在 Windows 10 上丢失标题与问号提示，说明文字还会撑坏卡片或在高缩放窄窗口下溢出边界；现改为在标题下方描述区渲染，任意宽度与缩放安全换行，Windows 11 不变。；**对话框跟随应用主题。** 桌面整理的放弃确认、预览卡、热键录制弹窗此前在应用主题覆盖与系统主题不一致时取错颜色；现按各自窗口主题解析，规则行随主题切换重建配色。",
+        "en-US": "**Exit reliability.** Quitting from the tray now always ends the process. On machines where the system's application-exit handshake stalls — typically Windows with UAC fully disabled and an elevated Explorer — a background DeskBox process used to survive \"exit\": the tray vanished and a restart worked, but the leftover process slowly ate memory and kept the right-click menu proxy alive beside it (feedback 555/556). Every shutdown path now carries a delayed hard-exit backstop, and the elevation notice and search popup close along with shutdown. Direct and Store builds share the fix.; **Windows 10: the drag-out card keeps its title.** Under Settings → File widgets → drag-and-drop behavior, the \"when dragging out of a widget\" card lost its title and question-mark tip on Windows 10, and its Windows 10 explanation could stretch the card out of shape or spill outside it on scaled, narrower windows. The explanation now renders in the card's description area and wraps safely at any width and scale; Windows 11 is unchanged.; **Dialogs follow the app theme again.** The desktop-organization abandon dialog, its preview cards, and the hotkey recorder had been picking up the raw system theme whenever the app's theme override disagreed with it; they now resolve against their own window theme, and desktop-organization rule rows rebuild on theme flips."
+    }
+}

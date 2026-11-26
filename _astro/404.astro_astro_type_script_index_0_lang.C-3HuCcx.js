@@ -1,0 +1,1 @@
+import{t as o}from"./site.Br4UcM4G.js";const n=window.location.pathname||"/404/";if(n.startsWith("/en/")){const e=document.getElementById("nf-home"),t=document.getElementById("nf-help");e&&(e.href="/en/",e.textContent="Back to Home"),t&&(t.href="/en/help/",t.textContent="Help Center")}o("not_found",n,{path:n,referrer:document.referrer||""});
